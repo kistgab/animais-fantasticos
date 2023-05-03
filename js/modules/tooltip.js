@@ -50,5 +50,7 @@ export default class initTooltip {
     if (this.tooltips.length) {
       this.addTooltipsEvent();
     }
+
+    return this;
   }
 }
