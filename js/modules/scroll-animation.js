@@ -19,7 +19,6 @@ export default class AnimateScroll {
   }
 
   checkDistance() {
-    console.log("teste");
     this.distance.forEach((item) => {
       if (window.scrollY > item.offset) {
         item.element.classList.add("ativo");
