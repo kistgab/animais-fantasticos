@@ -1,9 +1,11 @@
+import debounce from "./debounce.js";
+
 export default class AnimateScroll {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.halfWindowHeight = window.innerHeight * 0.6;
 
-    this.checkDistance = this.checkDistance.bind(this);
+    this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }
 
   getDistance() {
@@ -17,6 +19,7 @@ export default class AnimateScroll {
   }
 
   checkDistance() {
+    console.log("teste");
     this.distance.forEach((item) => {
       if (window.scrollY > item.offset) {
         item.element.classList.add("ativo");
