@@ -32,12 +32,12 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-fetchAnimals("../../animaisapi.json", ".numeros-grid");
-fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
-
 const animateScroll = new AnimateScroll("[data-anime='scroll']");
 animateScroll.init();
 
 initDropDownMenu();
 initMenuMobile();
 initFuncionamento();
+
+fetchAnimals("../../animaisapi.json", ".numeros-grid");
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
