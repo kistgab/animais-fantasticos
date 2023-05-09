@@ -22,7 +22,6 @@ export default class MenuMobile {
   }
 
   addMenuMobileEvents() {
-    console.log(this);
     this.userEvents.forEach((event) =>
       this.menuButton.addEventListener(event, this.openMenu)
     );
