@@ -6,7 +6,7 @@
 }
 
 .numeros-grid h3 {
-  font-family: "Playfair display SC";
+  font-family: "Playfair display SC", sans-serif;
   font-size: 2rem;
   margin-bottom: .5rem;
 }
